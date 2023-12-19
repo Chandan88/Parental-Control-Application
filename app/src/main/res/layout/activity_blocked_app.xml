@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="locale"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.BlockedAppActivity">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/block_app" />
+
+    <TextView
+        android:id="@+id/txtBlockedAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_4dp"
+        android:text="@string/child_app_name"
+        android:textAlignment="center"
+        android:fontFamily="@font/open_sans_bold"
+        android:textColor="@color/flatui_midnight_blue"
+        android:textSize="@dimen/text_size_18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="@string/this_app_is_blocked_by_your_parents"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_16sp" />
+</LinearLayout>
